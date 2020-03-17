@@ -1,0 +1,24 @@
+{
+  "name": "asm_1",
+  "version": "1.0.0",
+  "description": "for the asm in my university",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khanhnqps10920/du_an_1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Khanhnqps10920/du_an_1/issues"
+  },
+  "homepage": "https://github.com/Khanhnqps10920/du_an_1#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.13.1"
+  }
+}
