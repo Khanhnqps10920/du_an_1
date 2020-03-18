@@ -1,0 +1,77 @@
+.header {
+  padding: 2rem;
+  position: fixed;
+  z-index: 999999;
+  width: 100%; }
+  .header__info {
+    margin-right: 1.5rem; }
+    .header__info-tel {
+      padding-right: 1.5rem;
+      border-right: 1px dotted #ffffff; }
+      .header__info-tel a {
+        color: #ffffff;
+        font-size: 1.3rem;
+        font-weight: bold; }
+        .header__info-tel a i {
+          margin-right: 0.5rem; }
+    .header__info-search a {
+      color: #ffffff;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-left: 1.5rem; }
+  .header__navbar {
+    position: static; }
+    .header__navbar .navbar-toggler {
+      padding: 0;
+      outline: none;
+      border: none; }
+      .header__navbar .navbar-toggler span {
+        background: #fbbd61;
+        width: 2rem;
+        height: 0.2rem;
+        display: block;
+        margin: 0.5rem 0;
+        border-radius: 0.3rem; }
+    .header__navbar .navbar-brand {
+      color: #ffffff;
+      font-size: 2rem;
+      color: #fbbd61;
+      letter-spacing: 0.5rem; }
+    .header__navbar .is-active.show {
+      background: black;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0; }
+      .header__navbar .is-active.show .category__item a {
+        text-align: center; }
+      .header__navbar .is-active.show .category__item.active a {
+        color: #ec7532; }
+    .header__navbar .category {
+      border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2); }
+      .header__navbar .category__item {
+        position: relative; }
+        .header__navbar .category__item a {
+          color: #ffffff;
+          font-size: 1.6rem;
+          text-transform: uppercase;
+          letter-spacing: 0.3rem;
+          padding: 2rem 2.4rem !important; }
+        .header__navbar .category__item::after {
+          position: absolute;
+          content: '';
+          width: 0;
+          height: 0.2rem;
+          transition: all 0.25s ease-in-out;
+          background-image: linear-gradient(to right, #fbbd61, #ec7532);
+          box-shadow: 0 0 20px 0 #fbbd61; }
+        .header__navbar .category__item:hover::after {
+          width: 100%; }
+        .header__navbar .category__item.active::after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 0.2rem;
+          transition: all 0.25s ease-in-out;
+          background-image: linear-gradient(to right, #fbbd61, #ec7532);
+          box-shadow: 0 0 20px 0 #fbbd61; }

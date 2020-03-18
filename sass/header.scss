@@ -1,0 +1,134 @@
+@import "./variables.scss";
+
+.header {
+  padding: 2rem;
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+
+  &__info {
+    margin-right: 1.5rem;
+
+
+    &-tel {
+      padding-right: 1.5rem;
+      border-right: 1px dotted $white-color;
+
+      a {
+        color: $white-color;
+        font-size: 1.3rem;
+        font-weight: bold;
+
+        i {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    &-search {
+      a {
+        color: $white-color;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-left: 1.5rem;
+      }
+    }
+  }
+
+  &__navbar {
+
+    position: static;
+
+    .navbar-toggler {
+      padding: 0;
+      outline: none;
+      border: none;
+
+
+      span {
+        background: $link-color;
+        width: 2rem;
+        height: 0.2rem;
+        display: block;
+        margin: 0.5rem 0;
+        border-radius: 0.3rem;
+      }
+    }
+
+    .navbar-brand {
+      color: $white-color;
+      font-size: 2rem;
+      color: $link-color;
+      letter-spacing: 0.5rem;
+    }
+
+    .is-active.show {
+      background: black;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+
+      .category {
+
+        &__item {
+          a {
+            text-align: center;
+          }
+
+          &.active {
+            a {
+              color: $second-link-color;
+            }
+          }
+        }
+      }
+    }
+
+    .category {
+      border-bottom: .1rem solid rgba(255, 255, 255, .2);
+
+
+
+      &__item {
+        position: relative;
+
+        a {
+          color: $white-color;
+          font-size: 1.6rem;
+          text-transform: uppercase;
+          letter-spacing: 0.3rem;
+          padding: 2rem 2.4rem !important;
+        }
+
+        &::after {
+          position: absolute;
+          content: '';
+          width: 0;
+          height: 0.2rem;
+          @include color-gradient-transition
+        }
+
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+
+        &.active {
+
+          &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 0.2rem;
+
+            @include color-gradient-transition
+          }
+        }
+      }
+    }
+
+
+  }
+}

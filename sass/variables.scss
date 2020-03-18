@@ -1,0 +1,17 @@
+$black-color: #000000;
+$white-color: #ffffff;
+$link-color: #fbbd61;
+$second-link-color: #ec7532;
+$medium-breakpoint: 991px;
+$tablet-breakpoint: 776px;
+$small-breakpoint: 576px;
+
+@mixin color-gradient-transition {
+  transition: all 0.25s ease-in-out;
+  background-image: linear-gradient(to right, #fbbd61, #ec7532);
+  box-shadow: 0 0 20px 0 #fbbd61;
+}
+
+@mixin text-decoration {
+  text-decoration: none;
+}
