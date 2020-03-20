@@ -10,7 +10,5 @@ html {
 a:hover {
   text-decoration: none; }
 
-.hero {
-  width: 100vw;
-  height: 100vh;
-  background: red; }
+ul {
+  list-style-type: none; }

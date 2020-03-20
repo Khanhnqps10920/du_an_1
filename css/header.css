@@ -2,9 +2,11 @@
   padding: 2rem;
   position: fixed;
   z-index: 999999;
-  width: 100%; }
+  width: 100%;
+  transition: 0.4s ease; }
   .header__info {
-    margin-right: 1.5rem; }
+    margin-right: 1.5rem;
+    display: flex; }
     .header__info-tel {
       padding-right: 1.5rem;
       border-right: 1px dotted #ffffff; }
@@ -19,6 +21,8 @@
       font-size: 1.3rem;
       font-weight: bold;
       margin-left: 1.5rem; }
+  .header .navbar {
+    padding: 0; }
   .header__navbar {
     position: static; }
     .header__navbar .navbar-toggler {

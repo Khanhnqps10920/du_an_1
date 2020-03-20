@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-sass-main": "node-sass sass/main.scss css/main.css -w",
     "build-sass-header": "node-sass sass/header.scss css/header.css -w",
-    "build-sass-hero": "node-sass sass/hero.scss css/hero.css -w"
+    "build-sass-hero": "node-sass sass/hero.scss css/hero.css -w",
+    "build-sass-movie": "node-sass sass/movie.scss css/movie.css -w"
+
   },
   "repository": {
     "type": "git",

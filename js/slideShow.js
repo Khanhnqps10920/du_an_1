@@ -1,36 +1,51 @@
-"use strict"
-
-let slideIndex = 0;
-
-
-const dots = document.querySelectorAll('.dot');
-
-
-const slides = document.querySelectorAll('.slideShow__item');
-
-const showSlides = () => {
-  let index;
+$(document).ready(function () {
+  $('.slideShow').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    autoplay: true
+  });
 
 
-  for (index = 0; index < dots.length; index++) {
-    dots[index].className = dots[index].className.replace(" active", "");
-  }
+  $('.movie__slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    centerPadding: '50px',
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+    responsive: [{
+        breakpoint: 776,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          arrows: false,
+          autoplay: false
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          centerPadding: 0,
+          autoplay: false
 
-  for (index = 0; index < slides.length; index++) {
-    slides[index].style.display = "none";
-    dots[index].className = dots[index].className.replace(" active", "");
-  }
+        }
+      }
+    ]
+  })
 
-  slideIndex++;
-
-  if (slideIndex > slides.length) {
-    slideIndex = 1
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-
-  setTimeout(showSlides, 8000);
-
-}
-
-showSlides();
+  $('.coming-soon__slider').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 5,
+    autoplay: false,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+  })
+});
