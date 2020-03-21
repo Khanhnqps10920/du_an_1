@@ -230,14 +230,17 @@
       text-transform: uppercase;
       color: #000000; }
     .movie-by-week .movie-tabs__info-time {
+      margin-top: 1rem;
       font-size: 1.4rem;
       display: inline-block;
-      margin-left: 0.5rem;
+      margin-right: 0.5rem;
       letter-spacing: 0.2rem;
       border-radius: 0.5rem;
       padding: 0.7rem 1rem;
       color: #717171;
       background: #d8d8d8; }
+      .movie-by-week .movie-tabs__info-time:first-child {
+        margin-left: 0; }
     .movie-by-week .movie-tabs__info .running-time {
       font-size: 1.2rem;
       text-align: right;
@@ -255,6 +258,124 @@
         color: #ffffff;
         background: #4a4a4a;
         text-align: center; }
+    .movie-by-week .movie-tabs__fast-booking h3 {
+      color: #fbbd61;
+      letter-spacing: 0.3rem; }
+    .movie-by-week .movie-tabs__fast-booking-tabsinfo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 0.1rem solid #000000; }
+      .movie-by-week .movie-tabs__fast-booking-tabsinfo p {
+        width: calc(100% / 3);
+        font-size: 1.6rem;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        padding: 1rem 0;
+        margin-bottom: 0; }
+        .movie-by-week .movie-tabs__fast-booking-tabsinfo p.active {
+          color: #ec7532; }
+          .movie-by-week .movie-tabs__fast-booking-tabsinfo p.active::after {
+            width: 100%; }
+        .movie-by-week .movie-tabs__fast-booking-tabsinfo p:hover {
+          color: #ec7532; }
+          .movie-by-week .movie-tabs__fast-booking-tabsinfo p:hover::after {
+            width: 100%; }
+        .movie-by-week .movie-tabs__fast-booking-tabsinfo p::after {
+          transition: all 0.25s ease-in-out;
+          background-image: linear-gradient(to right, #fbbd61, #ec7532);
+          box-shadow: 0 0 20px 0 #fbbd61;
+          position: absolute;
+          content: '';
+          width: 0;
+          height: 0.3rem;
+          left: 0;
+          bottom: -0.1rem; }
+    .movie-by-week .movie-tabs__fast-booking-tabs {
+      padding: 1rem 0; }
+      .movie-by-week .movie-tabs__fast-booking-tabs-name {
+        margin: 1rem 0;
+        letter-spacing: 0.3rem; }
+      .movie-by-week .movie-tabs__fast-booking-tabs-time {
+        margin: 3rem 0; }
+        .movie-by-week .movie-tabs__fast-booking-tabs-time-viewing {
+          font-weight: 400;
+          margin-right: .5rem;
+          font-size: 1.3rem; }
+        .movie-by-week .movie-tabs__fast-booking-tabs-time-time {
+          background: #d8d8d8;
+          color: #717171;
+          padding: 1rem 2rem;
+          border-radius: .5rem;
+          margin-right: 1rem;
+          cursor: pointer;
+          transition: 0.4s ease; }
+          .movie-by-week .movie-tabs__fast-booking-tabs-time-time.active {
+            background: #ec7532;
+            color: #ffffff; }
+          .movie-by-week .movie-tabs__fast-booking-tabs-time-time:hover {
+            background: #ec7532;
+            color: #ffffff; }
+      .movie-by-week .movie-tabs__fast-booking-tabs-running-time {
+        font-size: 1.5rem;
+        margin: 4rem 0; }
+        .movie-by-week .movie-tabs__fast-booking-tabs-running-time .certificate {
+          background: #000000;
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+          color: #ffffff;
+          padding: .5rem;
+          font-weight: bold;
+          margin-left: 1rem; }
+      .movie-by-week .movie-tabs__fast-booking-tabs-seat-info {
+        margin: 2rem 0; }
+        .movie-by-week .movie-tabs__fast-booking-tabs-seat-info:nth-child(2) .movie-tabs__fast-booking-tabs-seat-info-color {
+          background: #ec7532; }
+        .movie-by-week .movie-tabs__fast-booking-tabs-seat-info-color {
+          padding: .5rem 1rem;
+          background: #717171;
+          margin-right: 2rem; }
+        .movie-by-week .movie-tabs__fast-booking-tabs-seat-info-role {
+          font-size: 1.3rem;
+          letter-spacing: 0.3rem; }
+      .movie-by-week .movie-tabs__fast-booking-tabs-seatnumber {
+        display: flex;
+        flex-flow: wrap;
+        padding: 2rem 0; }
+        .movie-by-week .movie-tabs__fast-booking-tabs-seatnumber li {
+          margin: .2rem .2rem;
+          width: 10%;
+          height: 1.5rem;
+          background: #717171; }
+          .movie-by-week .movie-tabs__fast-booking-tabs-seatnumber li.booked {
+            background: #ec7532; }
+      .movie-by-week .movie-tabs__fast-booking-tabs-theater {
+        margin: 1.5rem 0;
+        display: flex;
+        align-items: center; }
+        .movie-by-week .movie-tabs__fast-booking-tabs-theater input {
+          margin-right: 1rem; }
+        .movie-by-week .movie-tabs__fast-booking-tabs-theater label {
+          font-size: 1.5rem;
+          letter-spacing: 0.3rem; }
+
+.button-step {
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  background: #ec7532;
+  border-radius: .5rem;
+  cursor: pointer;
+  text-align: right; }
+
+.next-step {
+  float: right; }
+
+.last-step {
+  flat: left; }
 
 @media (max-width: 576px) {
   .movie-by-week__tabs-daylist {
@@ -390,8 +511,55 @@
         .coming-soon__slider-item-img img {
           max-width: 100%;
           height: 25rem;
-          border-radius: .5rem;
+          border-radius: 0.5rem;
           object-fit: cover; }
 
 .slick-slide {
   outline: none; }
+
+.promotion {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  /* the parent */ }
+  .promotion .slick-slide {
+    outline: none; }
+  .promotion .slick-slide {
+    margin: 0 10px; }
+  .promotion .slick-list {
+    margin: 0 -10px; }
+  .promotion .slick-dots {
+    left: 0; }
+    .promotion .slick-dots li button {
+      border: 0.1rem solid #000000; }
+    .promotion .slick-dots li.slick-active button {
+      background: #000000; }
+  .promotion__title {
+    text-align: left;
+    border-bottom: 0.1rem solid #d8d8d8;
+    padding: 1.5rem 0;
+    color: #fbbd61;
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+    position: relative; }
+    .promotion__title::after {
+      width: 15rem;
+      height: 0.3rem;
+      transition: all 0.25s ease-in-out;
+      background-image: linear-gradient(to right, #fbbd61, #ec7532);
+      box-shadow: 0 0 20px 0 #fbbd61;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.1rem; }
+  .promotion__slider {
+    display: flex;
+    padding: 5rem 0;
+    flex-flow: wrap; }
+    .promotion__slider-item {
+      height: 30rem; }
+      .promotion__slider-item img {
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
+        object-position: center;
+        vertical-align: center; }

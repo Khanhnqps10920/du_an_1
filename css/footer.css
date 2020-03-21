@@ -1,0 +1,14 @@
+.footer {
+  padding: 7.5rem 0;
+  background: #000000; }
+  .footer__item-title {
+    color: #ec7532;
+    text-transform: uppercase; }
+  .footer__item-list {
+    margin: 3rem 0; }
+    .footer__item-list li {
+      margin: 1rem 0; }
+      .footer__item-list li a {
+        color: #ffffff;
+        font-size: 1.2rem;
+        letter-spacing: 0.3rem; }

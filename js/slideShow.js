@@ -41,11 +41,18 @@ $(document).ready(function () {
   })
 
   $('.coming-soon__slider').slick({
-    centerMode: true,
     centerPadding: '60px',
-    slidesToShow: 5,
+    slidesToShow: 4,
     autoplay: false,
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
+  })
+
+  $('.promotion__slider').slick({
+    slidesToShow: 1,
+    centerPadding: '60px',
+    arrows: false,
+    dots: true,
+
   })
 });

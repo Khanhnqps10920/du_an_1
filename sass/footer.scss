@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+.footer {
+  padding: 7.5rem 0;
+  background: $black-color;
+
+  &__item {
+    &-title {
+      color: $second-link-color;
+      text-transform: uppercase;
+    }
+
+
+    &-list {
+      margin: 3rem 0;
+
+      li {
+        margin: 1rem 0;
+
+        a {
+          color: $white-color;
+          font-size: 1.2rem;
+          letter-spacing: 0.3rem;
+        }
+
+      }
+    }
+  }
+}
