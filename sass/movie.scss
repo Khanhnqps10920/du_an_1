@@ -267,7 +267,7 @@
     padding-bottom: 4rem;
     border-bottom: 0.1rem solid #d8d8d8;
 
-    &:last-child {
+    d &:last-child {
       border: none;
     }
 
@@ -378,6 +378,14 @@
     }
 
     &__fast-booking {
+      &-tabs {
+        display: none;
+
+        &.active {
+          display: block;
+        }
+      }
+
       h3 {
         color: $link-color;
         letter-spacing: 0.3rem;
@@ -387,7 +395,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: .1rem solid $black-color;
+        border-bottom: 0.1rem solid $black-color;
 
         p {
           width: calc(100% / 3);
@@ -397,7 +405,6 @@
           position: relative;
           padding: 1rem 0;
           margin-bottom: 0;
-
 
           &.active {
             color: $second-link-color;
@@ -418,7 +425,7 @@
           &::after {
             @include color-gradient-transition;
             position: absolute;
-            content: '';
+            content: "";
             width: 0;
             height: 0.3rem;
             left: 0;
@@ -428,7 +435,6 @@
       }
 
       &-tabs {
-
         padding: 1rem 0;
 
         &-name {
@@ -441,7 +447,7 @@
 
           &-viewing {
             font-weight: 400;
-            margin-right: .5rem;
+            margin-right: 0.5rem;
             font-size: 1.3rem;
           }
 
@@ -449,7 +455,7 @@
             background: #d8d8d8;
             color: #717171;
             padding: 1rem 2rem;
-            border-radius: .5rem;
+            border-radius: 0.5rem;
             margin-right: 1rem;
             cursor: pointer;
             transition: 0.4s ease;
@@ -476,27 +482,24 @@
             height: 5rem;
             border-radius: 50%;
             color: $white-color;
-            padding: .5rem;
+            padding: 0.5rem;
             font-weight: bold;
             margin-left: 1rem;
           }
         }
 
         &-seat {
-
-
           &-info {
             margin: 2rem 0;
 
             &:nth-child(2) {
               .movie-tabs__fast-booking-tabs-seat-info-color {
                 background: $second-link-color;
-
               }
             }
 
             &-color {
-              padding: .5rem 1rem;
+              padding: 0.5rem 1rem;
               background: #717171;
               margin-right: 2rem;
             }
@@ -509,12 +512,15 @@
         }
 
         &-seatnumber {
-          display: flex;
+          display: none;
           flex-flow: wrap;
           padding: 2rem 0;
+          &.active {
+            display: flex;
+          }
 
           li {
-            margin: .2rem .2rem;
+            margin: 0.2rem 0.2rem;
             width: 10%;
             height: 1.5rem;
             background: #717171;
@@ -539,7 +545,6 @@
             letter-spacing: 0.3rem;
           }
         }
-
       }
     }
   }
@@ -551,18 +556,16 @@
   padding: 1rem 2rem;
   color: $white-color;
   background: $second-link-color;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   text-align: right;
 }
 
 .next-step {
-
   float: right;
 }
 
 .last-step {
-
   flat: left;
 }
 

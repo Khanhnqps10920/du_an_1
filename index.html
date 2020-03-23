@@ -51,7 +51,7 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item category__item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="movies.html">Features</a>
             </li>
             <li class="nav-item category__item">
               <a class="nav-link" href="#">Pricing</a>
@@ -284,13 +284,17 @@
             </ul>
 
             <!-- tabs content  -->
+
+            <!-- su -->
             <div class="movie-by-week__movie-tabscontent mt-5" id="su">
-              <div class="row movie-tabs">
+              <div class="row movie-tabs" data-item-id="3">
+                <!-- img -->
                 <div class="col-md-2 col-sm-9">
                   <a href="#" class="movie-tabs__img">
                     <img src="images/hero-1.jpg" alt="">
                   </a>
                 </div>
+                <!-- booking item -->
                 <div class="col-md-10 col-sm-9">
                   <div class="row">
                     <div class="col-md-6">
@@ -323,34 +327,32 @@
                       </div>
                     </div>
                     <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
+                      <div class="movie-tabs__fast-booking" data-item-id="3">
                         <h3>Book now</h3>
                         <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
+                          <p class="active">Movie</p>
                           <p>Seats</p>
-                          <p class="active">Theater</p>
+                          <p>Theater</p>
                         </div>
 
 
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
+                        <div class="movie-tabs__fast-booking-tabs active" id="movie">
                           <h4 class="movie-tabs__fast-booking-tabs-name">
                             Name: Su
                           </h4>
                           <div class="movie-tabs__fast-booking-tabs-time">
                             <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
                               Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
+                            <span data-time-id="1" class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
+                            <span data-time-id="2" class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
+                            <span data-time-id="3" class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
                           </div>
                           <div class="movie-tabs__fast-booking-tabs-running-time">
                             120 Mins <span class="certificate">PG</span>
                           </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
+
                         </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
+                        <div class="movie-tabs__fast-booking-tabs" id="seats">
                           <div class="row">
                             <div class="col-md-5">
                               <div class="movie-tabs__fast-booking-tabs-seat">
@@ -371,7 +373,7 @@
                               </div>
                             </div>
                             <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
+                              <ul data-time-id="1" class="movie-tabs__fast-booking-tabs-seatnumber active">
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
@@ -414,143 +416,19 @@
                                 <li></li>
                                 <li></li>
                               </ul>
-                            </div>
-                          </div>
+                              <ul data-time-id="2" class="movie-tabs__fast-booking-tabs-seatnumber">
 
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -582,139 +460,8 @@
                                 <li></li>
                                 <li></li>
                               </ul>
-                            </div>
-                          </div>
+                              <ul data-time-id="3" class="movie-tabs__fast-booking-tabs-seatnumber">
 
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -742,140 +489,6 @@
                                 <li></li>
                                 <li></li>
                                 <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                            </div>
-                          </div>
-
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
@@ -883,40 +496,6 @@
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li class="booked">
-                                  </lic>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
                               </ul>
                             </div>
                           </div>
@@ -958,13 +537,17 @@
                 </div>
               </div>
             </div>
+
+            <!-- mon -->
             <div class="movie-by-week__movie-tabscontent mt-5" id="mon">
-              <div class="row movie-tabs">
+              <div class="row movie-tabs" data-item-id="5">
+                <!-- img -->
                 <div class="col-md-2 col-sm-9">
                   <a href="#" class="movie-tabs__img">
                     <img src="images/hero-1.jpg" alt="">
                   </a>
                 </div>
+                <!-- booking item -->
                 <div class="col-md-10 col-sm-9">
                   <div class="row">
                     <div class="col-md-6">
@@ -997,34 +580,32 @@
                       </div>
                     </div>
                     <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
+                      <div class="movie-tabs__fast-booking" data-item-id="5">
                         <h3>Book now</h3>
                         <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
+                          <p class="active">Movie</p>
                           <p>Seats</p>
-                          <p class="active">Theater</p>
+                          <p>Theater</p>
                         </div>
 
 
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
+                        <div class="movie-tabs__fast-booking-tabs active" id="movie">
                           <h4 class="movie-tabs__fast-booking-tabs-name">
                             Name: Su
                           </h4>
                           <div class="movie-tabs__fast-booking-tabs-time">
                             <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
                               Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
+                            <span data-time-id="1" class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
+                            <span data-time-id="2" class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
+                            <span data-time-id="3" class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
                           </div>
                           <div class="movie-tabs__fast-booking-tabs-running-time">
                             120 Mins <span class="certificate">PG</span>
                           </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
+
                         </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
+                        <div class="movie-tabs__fast-booking-tabs" id="seats">
                           <div class="row">
                             <div class="col-md-5">
                               <div class="movie-tabs__fast-booking-tabs-seat">
@@ -1045,7 +626,7 @@
                               </div>
                             </div>
                             <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
+                              <ul data-time-id="1" class="movie-tabs__fast-booking-tabs-seatnumber active">
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
@@ -1088,143 +669,19 @@
                                 <li></li>
                                 <li></li>
                               </ul>
-                            </div>
-                          </div>
+                              <ul data-time-id="2" class="movie-tabs__fast-booking-tabs-seatnumber">
 
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -1256,139 +713,8 @@
                                 <li></li>
                                 <li></li>
                               </ul>
-                            </div>
-                          </div>
+                              <ul data-time-id="3" class="movie-tabs__fast-booking-tabs-seatnumber">
 
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -1416,140 +742,6 @@
                                 <li></li>
                                 <li></li>
                                 <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                            </div>
-                          </div>
-
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
@@ -1557,40 +749,6 @@
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li class="booked">
-                                  </lic>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
                               </ul>
                             </div>
                           </div>
@@ -1632,13 +790,17 @@
                 </div>
               </div>
             </div>
+
+            <!-- tu -->
             <div class="movie-by-week__movie-tabscontent mt-5" id="tu">
-              <div class="row movie-tabs">
+              <div class="row movie-tabs" data-item-id="7">
+                <!-- img -->
                 <div class="col-md-2 col-sm-9">
                   <a href="#" class="movie-tabs__img">
                     <img src="images/hero-1.jpg" alt="">
                   </a>
                 </div>
+                <!-- booking item -->
                 <div class="col-md-10 col-sm-9">
                   <div class="row">
                     <div class="col-md-6">
@@ -1671,34 +833,32 @@
                       </div>
                     </div>
                     <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
+                      <div class="movie-tabs__fast-booking" data-item-id="7">
                         <h3>Book now</h3>
                         <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
+                          <p class="active">Movie</p>
                           <p>Seats</p>
-                          <p class="active">Theater</p>
+                          <p>Theater</p>
                         </div>
 
 
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
+                        <div class="movie-tabs__fast-booking-tabs active" id="movie">
                           <h4 class="movie-tabs__fast-booking-tabs-name">
                             Name: Su
                           </h4>
                           <div class="movie-tabs__fast-booking-tabs-time">
                             <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
                               Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
+                            <span data-time-id="1" class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
+                            <span data-time-id="2" class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
+                            <span data-time-id="3" class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
                           </div>
                           <div class="movie-tabs__fast-booking-tabs-running-time">
                             120 Mins <span class="certificate">PG</span>
                           </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
+
                         </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
+                        <div class="movie-tabs__fast-booking-tabs" id="seats">
                           <div class="row">
                             <div class="col-md-5">
                               <div class="movie-tabs__fast-booking-tabs-seat">
@@ -1719,7 +879,7 @@
                               </div>
                             </div>
                             <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
+                              <ul data-time-id="1" class="movie-tabs__fast-booking-tabs-seatnumber active">
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
@@ -1762,143 +922,19 @@
                                 <li></li>
                                 <li></li>
                               </ul>
-                            </div>
-                          </div>
+                              <ul data-time-id="2" class="movie-tabs__fast-booking-tabs-seatnumber">
 
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -1930,139 +966,8 @@
                                 <li></li>
                                 <li></li>
                               </ul>
-                            </div>
-                          </div>
+                              <ul data-time-id="3" class="movie-tabs__fast-booking-tabs-seatnumber">
 
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -2090,140 +995,6 @@
                                 <li></li>
                                 <li></li>
                                 <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                            </div>
-                          </div>
-
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
@@ -2231,40 +1002,6 @@
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li class="booked">
-                                  </lic>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
                               </ul>
                             </div>
                           </div>
@@ -2306,13 +1043,17 @@
                 </div>
               </div>
             </div>
+
+            <!-- we -->
             <div class="movie-by-week__movie-tabscontent mt-5" id="we">
-              <div class="row movie-tabs">
+              <div class="row movie-tabs" data-item-id="9">
+                <!-- img -->
                 <div class="col-md-2 col-sm-9">
                   <a href="#" class="movie-tabs__img">
                     <img src="images/hero-1.jpg" alt="">
                   </a>
                 </div>
+                <!-- booking item -->
                 <div class="col-md-10 col-sm-9">
                   <div class="row">
                     <div class="col-md-6">
@@ -2345,34 +1086,32 @@
                       </div>
                     </div>
                     <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
+                      <div class="movie-tabs__fast-booking" data-item-id="9">
                         <h3>Book now</h3>
                         <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
+                          <p class="active">Movie</p>
                           <p>Seats</p>
-                          <p class="active">Theater</p>
+                          <p>Theater</p>
                         </div>
 
 
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
+                        <div class="movie-tabs__fast-booking-tabs active" id="movie">
                           <h4 class="movie-tabs__fast-booking-tabs-name">
                             Name: Su
                           </h4>
                           <div class="movie-tabs__fast-booking-tabs-time">
                             <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
                               Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
+                            <span data-time-id="1" class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
+                            <span data-time-id="2" class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
+                            <span data-time-id="3" class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
                           </div>
                           <div class="movie-tabs__fast-booking-tabs-running-time">
                             120 Mins <span class="certificate">PG</span>
                           </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
+
                         </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
+                        <div class="movie-tabs__fast-booking-tabs" id="seats">
                           <div class="row">
                             <div class="col-md-5">
                               <div class="movie-tabs__fast-booking-tabs-seat">
@@ -2393,7 +1132,7 @@
                               </div>
                             </div>
                             <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
+                              <ul data-time-id="1" class="movie-tabs__fast-booking-tabs-seatnumber active">
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
@@ -2436,143 +1175,19 @@
                                 <li></li>
                                 <li></li>
                               </ul>
-                            </div>
-                          </div>
+                              <ul data-time-id="2" class="movie-tabs__fast-booking-tabs-seatnumber">
 
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -2604,139 +1219,8 @@
                                 <li></li>
                                 <li></li>
                               </ul>
-                            </div>
-                          </div>
+                              <ul data-time-id="3" class="movie-tabs__fast-booking-tabs-seatnumber">
 
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -2764,140 +1248,6 @@
                                 <li></li>
                                 <li></li>
                                 <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                            </div>
-                          </div>
-
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
@@ -2905,40 +1255,6 @@
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li class="booked">
-                                  </lic>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
                               </ul>
                             </div>
                           </div>
@@ -2980,13 +1296,17 @@
                 </div>
               </div>
             </div>
+
+            <!-- th -->
             <div class="movie-by-week__movie-tabscontent mt-5" id="th">
-              <div class="row movie-tabs">
+              <div class="row movie-tabs" data-item-id="11">
+                <!-- img -->
                 <div class="col-md-2 col-sm-9">
                   <a href="#" class="movie-tabs__img">
                     <img src="images/hero-1.jpg" alt="">
                   </a>
                 </div>
+                <!-- booking item -->
                 <div class="col-md-10 col-sm-9">
                   <div class="row">
                     <div class="col-md-6">
@@ -3019,34 +1339,32 @@
                       </div>
                     </div>
                     <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
+                      <div class="movie-tabs__fast-booking" data-item-id="11">
                         <h3>Book now</h3>
                         <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
+                          <p class="active">Movie</p>
                           <p>Seats</p>
-                          <p class="active">Theater</p>
+                          <p>Theater</p>
                         </div>
 
 
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
+                        <div class="movie-tabs__fast-booking-tabs active" id="movie">
                           <h4 class="movie-tabs__fast-booking-tabs-name">
                             Name: Su
                           </h4>
                           <div class="movie-tabs__fast-booking-tabs-time">
                             <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
                               Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
+                            <span data-time-id="1" class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
+                            <span data-time-id="2" class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
+                            <span data-time-id="3" class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
                           </div>
                           <div class="movie-tabs__fast-booking-tabs-running-time">
                             120 Mins <span class="certificate">PG</span>
                           </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
+
                         </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
+                        <div class="movie-tabs__fast-booking-tabs" id="seats">
                           <div class="row">
                             <div class="col-md-5">
                               <div class="movie-tabs__fast-booking-tabs-seat">
@@ -3067,7 +1385,7 @@
                               </div>
                             </div>
                             <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
+                              <ul data-time-id="1" class="movie-tabs__fast-booking-tabs-seatnumber active">
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
@@ -3110,143 +1428,19 @@
                                 <li></li>
                                 <li></li>
                               </ul>
-                            </div>
-                          </div>
+                              <ul data-time-id="2" class="movie-tabs__fast-booking-tabs-seatnumber">
 
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -3278,139 +1472,8 @@
                                 <li></li>
                                 <li></li>
                               </ul>
-                            </div>
-                          </div>
+                              <ul data-time-id="3" class="movie-tabs__fast-booking-tabs-seatnumber">
 
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -3438,140 +1501,6 @@
                                 <li></li>
                                 <li></li>
                                 <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                            </div>
-                          </div>
-
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
@@ -3579,40 +1508,6 @@
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li class="booked">
-                                  </lic>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
                               </ul>
                             </div>
                           </div>
@@ -3654,13 +1549,17 @@
                 </div>
               </div>
             </div>
+
+            <!-- fri -->
             <div class="movie-by-week__movie-tabscontent mt-5" id="fri">
-              <div class="row movie-tabs">
+              <div class="row movie-tabs" data-item-id="13">
+                <!-- img -->
                 <div class="col-md-2 col-sm-9">
                   <a href="#" class="movie-tabs__img">
                     <img src="images/hero-1.jpg" alt="">
                   </a>
                 </div>
+                <!-- booking item -->
                 <div class="col-md-10 col-sm-9">
                   <div class="row">
                     <div class="col-md-6">
@@ -3693,34 +1592,32 @@
                       </div>
                     </div>
                     <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
+                      <div class="movie-tabs__fast-booking" data-item-id="13">
                         <h3>Book now</h3>
                         <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
+                          <p class="active">Movie</p>
                           <p>Seats</p>
-                          <p class="active">Theater</p>
+                          <p>Theater</p>
                         </div>
 
 
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
+                        <div class="movie-tabs__fast-booking-tabs active" id="movie">
                           <h4 class="movie-tabs__fast-booking-tabs-name">
                             Name: Su
                           </h4>
                           <div class="movie-tabs__fast-booking-tabs-time">
                             <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
                               Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
+                            <span data-time-id="1" class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
+                            <span data-time-id="2" class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
+                            <span data-time-id="3" class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
                           </div>
                           <div class="movie-tabs__fast-booking-tabs-running-time">
                             120 Mins <span class="certificate">PG</span>
                           </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
+
                         </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
+                        <div class="movie-tabs__fast-booking-tabs" id="seats">
                           <div class="row">
                             <div class="col-md-5">
                               <div class="movie-tabs__fast-booking-tabs-seat">
@@ -3741,7 +1638,7 @@
                               </div>
                             </div>
                             <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
+                              <ul data-time-id="1" class="movie-tabs__fast-booking-tabs-seatnumber active">
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
@@ -3784,143 +1681,19 @@
                                 <li></li>
                                 <li></li>
                               </ul>
-                            </div>
-                          </div>
+                              <ul data-time-id="2" class="movie-tabs__fast-booking-tabs-seatnumber">
 
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -3952,139 +1725,8 @@
                                 <li></li>
                                 <li></li>
                               </ul>
-                            </div>
-                          </div>
+                              <ul data-time-id="3" class="movie-tabs__fast-booking-tabs-seatnumber">
 
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -4112,140 +1754,6 @@
                                 <li></li>
                                 <li></li>
                                 <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                            </div>
-                          </div>
-
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
@@ -4253,40 +1761,6 @@
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li class="booked">
-                                  </lic>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
                               </ul>
                             </div>
                           </div>
@@ -4328,18 +1802,21 @@
                 </div>
               </div>
             </div>
+
+            <!-- sa -->
+
             <div class="movie-by-week__movie-tabscontent mt-5" id="sa">
-              <div class="row movie-tabs">
+              <div class="row movie-tabs" data-item-id="15">
+                <!-- img -->
                 <div class="col-md-2 col-sm-9">
                   <a href="#" class="movie-tabs__img">
                     <img src="images/hero-1.jpg" alt="">
                   </a>
                 </div>
-                <!-- tab info -->
+                <!-- booking item -->
                 <div class="col-md-10 col-sm-9">
                   <div class="row">
                     <div class="col-md-6">
-                      <!-- tab info -->
                       <div class="movie-tabs__info">
                         <span class="movie-tabs__info-category">Action,Dramas</span>
                         <h3 class="movie-tabs__info-title">Su</h3>
@@ -4369,34 +1846,32 @@
                       </div>
                     </div>
                     <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
+                      <div class="movie-tabs__fast-booking" data-item-id="15">
                         <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo test">
-                          <p>Movie</p>
+                        <div class="movie-tabs__fast-booking-tabsinfo">
+                          <p class="active">Movie</p>
                           <p>Seats</p>
-                          <p class="active">Theater</p>
+                          <p>Theater</p>
                         </div>
 
 
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
+                        <div class="movie-tabs__fast-booking-tabs active" id="movie">
                           <h4 class="movie-tabs__fast-booking-tabs-name">
                             Name: Su
                           </h4>
                           <div class="movie-tabs__fast-booking-tabs-time">
                             <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
                               Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
+                            <span data-time-id="1" class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
+                            <span data-time-id="2" class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
+                            <span data-time-id="3" class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
                           </div>
                           <div class="movie-tabs__fast-booking-tabs-running-time">
                             120 Mins <span class="certificate">PG</span>
                           </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
+
                         </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
+                        <div class="movie-tabs__fast-booking-tabs" id="seats">
                           <div class="row">
                             <div class="col-md-5">
                               <div class="movie-tabs__fast-booking-tabs-seat">
@@ -4417,7 +1892,7 @@
                               </div>
                             </div>
                             <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
+                              <ul data-time-id="1" class="movie-tabs__fast-booking-tabs-seatnumber active">
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
@@ -4460,143 +1935,19 @@
                                 <li></li>
                                 <li></li>
                               </ul>
-                            </div>
-                          </div>
+                              <ul data-time-id="2" class="movie-tabs__fast-booking-tabs-seatnumber">
 
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
+                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -4628,139 +1979,8 @@
                                 <li></li>
                                 <li></li>
                               </ul>
-                            </div>
-                          </div>
+                              <ul data-time-id="3" class="movie-tabs__fast-booking-tabs-seatnumber">
 
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -4788,140 +2008,6 @@
                                 <li></li>
                                 <li></li>
                                 <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                            </div>
-                          </div>
-
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Next step
-                          </button>
-
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" id="theater">
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Bình thạnh</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q10</label>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-theater">
-                            <input type="radio" name="theater" id="">
-                            <label for="theater">Movie Q2</label>
-                          </div>
-
-                          <button class="button-step last-step">
-                            Last step
-                          </button>
-                          <button class="button-step next-step">
-                            Order
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="row movie-tabs">
-                <div class="col-md-2 col-sm-9">
-                  <a href="#" class="movie-tabs__img">
-                    <img src="images/hero-1.jpg" alt="">
-                  </a>
-                </div>
-                <div class="col-md-10 col-sm-9">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="movie-tabs__info">
-                        <span class="movie-tabs__info-category">Action,Dramas</span>
-                        <h3 class="movie-tabs__info-title">Su</h3>
-                        <p class="movie-tabs__info-des">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus numquam error iure
-                          rem...
-                        </p>
-                        <p class="movie-tabs__info-full">
-                          <a href="#">FULL synopsis <i class="fas fa-chevron-right"></i> </a>
-                        </p>
-                        <div class="row">
-                          <div class="col-md-8 col-sm-9">
-                            <hr class="space-10">
-                            <span class="movie-tabs__info-viewingtime mb-3">
-
-                              <i class="far fa-clock"></i>
-                              Viewing times
-                            </span>
-                            <br>
-                            <span class="movie-tabs__info-time">16:00</span>
-                            <span class="movie-tabs__info-time">18:00</span>
-                            <span class="movie-tabs__info-time">21:00</span>
-                          </div>
-
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="movie-tabs__fast-booking">
-                        <h3>Book now</h3>
-                        <div class="movie-tabs__fast-booking-tabsinfo">
-                          <p>Movie</p>
-                          <p>Seats</p>
-                          <p class="active">Theater</p>
-                        </div>
-
-
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="movie">
-                          <h4 class="movie-tabs__fast-booking-tabs-name">
-                            Name: Su
-                          </h4>
-                          <div class="movie-tabs__fast-booking-tabs-time">
-                            <span class="movie-tabs__fast-booking-tabs-time-viewing"><i class="far fa-clock"></i>
-                              Viewing times :</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time active">16:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">18:00</span>
-                            <span class="movie-tabs__fast-booking-tabs-time-time">21:00</span>
-                          </div>
-                          <div class="movie-tabs__fast-booking-tabs-running-time">
-                            120 Mins <span class="certificate">PG</span>
-                          </div>
-                          <button class="button-step next-step" id="stepOne">
-                            Next step
-                          </button>
-                        </div>
-                        <div class="movie-tabs__fast-booking-tabs" hidden id="seats">
-                          <div class="row">
-                            <div class="col-md-5">
-                              <div class="movie-tabs__fast-booking-tabs-seat">
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Available
-                                  </span>
-                                </div>
-                                <div class="movie-tabs__fast-booking-tabs-seat-info">
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-color">
-                                  </span>
-                                  <span class="movie-tabs__fast-booking-tabs-seat-info-role">
-                                    Booked
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-7">
-                              <ul class="movie-tabs__fast-booking-tabs-seatnumber">
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
@@ -4929,40 +2015,6 @@
                                 <li class="booked"></li>
                                 <li class="booked"></li>
                                 <li class="booked"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li class="booked">
-                                  </lic>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li class="booked"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
                               </ul>
                             </div>
                           </div>
@@ -5004,7 +2056,6 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>

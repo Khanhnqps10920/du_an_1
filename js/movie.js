@@ -104,26 +104,83 @@ for (const item of comingSoonSliderItems) {
   item.addEventListener('click', (e) => handleSliderItemClick(e, item));
 }
 
-const handleTabClick = (e, item) => {
-  const bookingTabs = document.querySelectorAll('.movie-tabs__fast-booking-tabsinfo p');
+
+//booking
+const handlebookingItemClick = (e, bookingItems, bookingTabs, itemId) => {
+  console.log('1111', bookingTabs);
+  //get activeItem
+  for (let index = 0; index < bookingItems.length; index++) {
+    if (bookingItems[index].classList.contains('active')) {
+      bookingItems[index].classList.remove('active');
+    }
+  }
+  e.target.classList.add('active');
+
   for (const tab of bookingTabs) {
     if (tab.classList.contains('active')) {
       tab.classList.remove('active');
     }
   }
 
+  // active tab 
+  const tabId = e.target.textContent.toLowerCase();
 
-  console.log(item);
-  console.log('1111');
-  item.classList.add('active');
+  const activeTab = document.querySelector(`.movie-tabs__fast-booking[data-item-id="${itemId}"] #${tabId}`)
+  console.log(activeTab);
+
+  activeTab.classList.add('active');
+}
+
+
+//time + seats
+const handleBookingTimeClick = (e, time, movieTimes, bookingSeats) => {
+  for (const time of movieTimes) {
+    if (time.classList.contains('active')) time.classList.remove('active');
+  }
+  const timeId = time.getAttribute('data-time-id');
+
+  for (const seat of bookingSeats) {
+    const seatId = seat.getAttribute('data-time-id');
+
+    if (seatId === timeId) {
+      seat.classList.add('active');
+    } else {
+      seat.classList.remove('active');
+    }
+  }
+
+  time.classList.add('active');
+
 
 }
 
-const bookingTabs = document.querySelectorAll('.movie-tabs__fast-booking-tabsinfo p');
+//handle booking
+const movieTabItems = document.querySelectorAll('.movie-tabs');
+for (const item of movieTabItems) {
+  if (item.hasAttribute('data-item-id')) {
+    //get item id
+    const itemId = item.getAttribute('data-item-id');
+    const bookingItems = item.querySelectorAll(`.movie-tabs__fast-booking[data-item-id="${itemId}"] .movie-tabs__fast-booking-tabsinfo > p`);
+    const bookingTabs = item.querySelectorAll(`.movie-tabs__fast-booking[data-item-id="${itemId}"] .movie-tabs__fast-booking-tabs`);
 
-for (const tab of bookingTabs) {
 
-  tab.addEventListener('click', (e) => {
-    handleTabClick(e, tab);
-  })
+
+    //handle booking tab 
+    for (const item of bookingItems) {
+      item.addEventListener('click', (e) => {
+        handlebookingItemClick(e, bookingItems, bookingTabs, itemId);
+      })
+    }
+
+    //handle movie time
+    const movieTimes = item.querySelectorAll(`.movie-tabs__fast-booking[data-item-id="${itemId}"] .movie-tabs__fast-booking-tabs-time-time`);
+
+    const bookingSeats = item.querySelectorAll(`.movie-tabs__fast-booking[data-item-id="${itemId}"] .movie-tabs__fast-booking-tabs-seatnumber`);
+
+    for (const time of movieTimes) {
+      time.addEventListener('click', (e) => {
+        handleBookingTimeClick(e, time, movieTimes, bookingSeats);
+      });
+    }
+  }
 }

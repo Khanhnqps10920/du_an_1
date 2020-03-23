@@ -1,0 +1,80 @@
+.movies-hero {
+  background: url("../images/hero-whats-on.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+  position: relative; }
+  .movies-hero__content h4 {
+    color: #fbbd61;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    font-weight: 300; }
+  .movies-hero__content h1 {
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    margin: 1.5rem 0;
+    font-size: 4rem; }
+
+.movies {
+  margin-top: -13rem;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem; }
+  .movies__search {
+    background: #ffffff;
+    width: 100%;
+    border-radius: 3rem 3rem 0 0;
+    padding: 2rem;
+    position: relative; }
+    .movies__search input {
+      width: 100%;
+      padding: 1rem 2rem;
+      border-radius: 3rem;
+      border: .1rem solid #d8d8d8;
+      outline: none; }
+    .movies__search i {
+      position: absolute;
+      color: #ec7532;
+      top: 50%;
+      right: 3.5rem;
+      transform: translateY(-50%); }
+  .movies .items {
+    margin-top: 4.5rem; }
+  .movies__filter h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.3rem; }
+  .movies__filter .filter {
+    border: .1rem solid #8e8e8e;
+    padding: 1.6rem; }
+  .movies__filter-clear {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .movies__filter-days.filter {
+    border-top: none;
+    padding: 1rem 3rem; }
+  .movies__filter-days-day {
+    width: 100%;
+    padding: 1.5rem 0;
+    position: relative; }
+    .movies__filter-days-day::after {
+      transition: all 0.25s ease-in-out;
+      background-image: linear-gradient(to right, #fbbd61, #ec7532);
+      box-shadow: 0 0 20px 0 #fbbd61;
+      content: "";
+      position: absolute;
+      height: .3rem;
+      width: 0%;
+      left: 0;
+      bottom: -.1rem; }
+    .movies__filter-days-day:hover::after {
+      width: 100%; }
+    .movies__filter-days-day.active a {
+      color: #ec7532; }
+    .movies__filter-days-day.active::after {
+      width: 100%; }
+    .movies__filter-days-day a {
+      color: #000000;
+      font-size: 1.6rem; }

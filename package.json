@@ -9,7 +9,8 @@
     "build-sass-header": "node-sass sass/header.scss css/header.css -w",
     "build-sass-hero": "node-sass sass/hero.scss css/hero.css -w",
     "build-sass-movie": "node-sass sass/movie.scss css/movie.css -w",
-    "build-sass-footer": "node-sass sass/footer.scss css/footer.css -w"
+    "build-sass-footer": "node-sass sass/footer.scss css/footer.css -w",
+    "build-sass-movie-page": "node-sass sass/movies-page.scss css/movies-page.css -w"
   },
   "repository": {
     "type": "git",

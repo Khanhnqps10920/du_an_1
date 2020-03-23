@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/movies-page.css">
+  <script src="https://kit.fontawesome.com/4e3c8206ba.js" crossorigin="anonymous"></script>
+
+  <title>Movie List</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="header__info  justify-content-end ">
+            <div class="header__info-tel">
+              <a href="#"><i class="fas fa-phone-alt"></i>+84 9282 1111</a>
+            </div>
+            <div class="header__info-search">
+              <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <nav class="mt-3 navbar navbar-expand-lg header__navbar ">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <i class="fas fa-bars"></i> -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end is-active " id="navbarNav">
+          <ul class="navbar-nav category">
+            <li class="nav-item active category__item">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item category__item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item category__item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item category__item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+  <main>
+    <section class="movies-hero">
+      <div class="container">
+        <div class="row movies-hero__content">
+          <div class="col-md-9">
+            <h4>TAKE A LOOK AT</h4>
+            <h1>What's on this week</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="movies">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="movies__search">
+              <input type="text" name="search" placeholder="Type to search">
+              <i class="fas fa-search"></i>
+            </div>
+
+
+            <div class="row items">
+              <div class="col-md-2">
+                <div class="movies__filter">
+                  <h3>Filter By</h3>
+                  <div class="movies__filter-clear filter">
+                    <h4>Clear filter</h4>
+                    <i class="fas fa-times"></i>
+                  </div>
+                  <ul class="movies__filter-days filter">
+                    <li class="movies__filter-days-day active"><a href="#">Sunday</a></li>
+                    <li class="movies__filter-days-day"><a href="#">Monday</a></li>
+                    <li class="movies__filter-days-day"><a href="#">Tuesday</a></li>
+                    <li class="movies__filter-days-day"><a href="#">Wednesday</a></li>
+                    <li class="movies__filter-days-day"><a href="#">Thursday</a></li>
+                    <li class="movies__filter-days-day"><a href="#">Friday</a></li>
+                    <li class="movies__filter-days-day"><a href="#">Saturday</a></li>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10">
+              <div class="movies__items">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+
+<script src="js/header.js"></script>
+
+</html>

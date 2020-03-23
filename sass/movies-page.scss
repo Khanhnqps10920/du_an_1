@@ -1,0 +1,136 @@
+@import './variables.scss';
+
+
+//movie
+.movies-hero {
+  background: url('../images/hero-whats-on.jpg');
+  background-position: center;
+  background-size: cover;
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+  position: relative;
+
+  &__content {
+    h4 {
+      color: $link-color;
+      letter-spacing: 0.3rem;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+
+    h1 {
+      color: $white-color;
+      font-weight: 400;
+      letter-spacing: 0.3rem;
+      margin: 1.5rem 0;
+      font-size: 4rem;
+    }
+  }
+}
+
+
+.movies {
+  margin-top: -13rem;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+
+
+  //search
+  &__search {
+    background: $white-color;
+    width: 100%;
+    border-radius: 3rem 3rem 0 0;
+    padding: 2rem;
+    position: relative;
+
+    input {
+      width: 100%;
+      padding: 1rem 2rem;
+      border-radius: 3rem;
+      border: .1rem solid #d8d8d8;
+      outline: none;
+    }
+
+    i {
+      position: absolute;
+      color: $second-link-color;
+      top: 50%;
+      right: 3.5rem;
+      transform: translateY(-50%);
+    }
+  }
+
+
+
+  .items {
+    margin-top: 4.5rem;
+  }
+
+  //filter
+  &__filter {
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.3rem;
+    }
+
+    .filter {
+      border: .1rem solid #8e8e8e;
+      padding: 1.6rem;
+    }
+
+    &-clear {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-days.filter {
+      border-top: none;
+      padding: 1rem 3rem;
+
+    }
+
+    &-days {
+
+
+      &-day {
+        width: 100%;
+        padding: 1.5rem 0;
+        position: relative;
+
+        &::after {
+          @include color-gradient-transition;
+          content: "";
+          position: absolute;
+          height: .3rem;
+          width: 0%;
+          left: 0;
+          bottom: -.1rem;
+        }
+
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+
+        &.active {
+          a {
+            color: $second-link-color;
+          }
+
+          &::after {
+            width: 100%;
+          }
+        }
+
+        a {
+          color: $black-color;
+          font-size: 1.6rem;
+
+        }
+      }
+    }
+  }
+}

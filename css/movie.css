@@ -182,7 +182,7 @@
     margin-bottom: 4rem;
     padding-bottom: 4rem;
     border-bottom: 0.1rem solid #d8d8d8; }
-    .movie-by-week .movie-tabs:last-child {
+    d .movie-by-week .movie-tabs:last-child {
       border: none; }
     .movie-by-week .movie-tabs__img {
       width: 100%;
@@ -258,6 +258,10 @@
         color: #ffffff;
         background: #4a4a4a;
         text-align: center; }
+    .movie-by-week .movie-tabs__fast-booking-tabs {
+      display: none; }
+      .movie-by-week .movie-tabs__fast-booking-tabs.active {
+        display: block; }
     .movie-by-week .movie-tabs__fast-booking h3 {
       color: #fbbd61;
       letter-spacing: 0.3rem; }
@@ -287,7 +291,7 @@
           background-image: linear-gradient(to right, #fbbd61, #ec7532);
           box-shadow: 0 0 20px 0 #fbbd61;
           position: absolute;
-          content: '';
+          content: "";
           width: 0;
           height: 0.3rem;
           left: 0;
@@ -301,13 +305,13 @@
         margin: 3rem 0; }
         .movie-by-week .movie-tabs__fast-booking-tabs-time-viewing {
           font-weight: 400;
-          margin-right: .5rem;
+          margin-right: 0.5rem;
           font-size: 1.3rem; }
         .movie-by-week .movie-tabs__fast-booking-tabs-time-time {
           background: #d8d8d8;
           color: #717171;
           padding: 1rem 2rem;
-          border-radius: .5rem;
+          border-radius: 0.5rem;
           margin-right: 1rem;
           cursor: pointer;
           transition: 0.4s ease; }
@@ -326,7 +330,7 @@
           height: 5rem;
           border-radius: 50%;
           color: #ffffff;
-          padding: .5rem;
+          padding: 0.5rem;
           font-weight: bold;
           margin-left: 1rem; }
       .movie-by-week .movie-tabs__fast-booking-tabs-seat-info {
@@ -334,18 +338,20 @@
         .movie-by-week .movie-tabs__fast-booking-tabs-seat-info:nth-child(2) .movie-tabs__fast-booking-tabs-seat-info-color {
           background: #ec7532; }
         .movie-by-week .movie-tabs__fast-booking-tabs-seat-info-color {
-          padding: .5rem 1rem;
+          padding: 0.5rem 1rem;
           background: #717171;
           margin-right: 2rem; }
         .movie-by-week .movie-tabs__fast-booking-tabs-seat-info-role {
           font-size: 1.3rem;
           letter-spacing: 0.3rem; }
       .movie-by-week .movie-tabs__fast-booking-tabs-seatnumber {
-        display: flex;
+        display: none;
         flex-flow: wrap;
         padding: 2rem 0; }
+        .movie-by-week .movie-tabs__fast-booking-tabs-seatnumber.active {
+          display: flex; }
         .movie-by-week .movie-tabs__fast-booking-tabs-seatnumber li {
-          margin: .2rem .2rem;
+          margin: 0.2rem 0.2rem;
           width: 10%;
           height: 1.5rem;
           background: #717171; }
@@ -367,7 +373,7 @@
   padding: 1rem 2rem;
   color: #ffffff;
   background: #ec7532;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   text-align: right; }
 
