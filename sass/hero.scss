@@ -5,6 +5,10 @@
   height: 100%;
   position: relative;
 
+  .slick-track {
+    height: 100vh;
+  }
+
   .scroll-down {
     position: absolute;
     background: $white-color;
@@ -51,6 +55,7 @@
   background: white;
 }
 
+// slide show
 .slideShow {
   height: 50.6rem;
   min-height: 100vh;

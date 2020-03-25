@@ -2,6 +2,8 @@
   width: 100%;
   height: 100%;
   position: relative; }
+  .hero-section .slick-track {
+    height: 100vh; }
   .hero-section .scroll-down {
     position: absolute;
     background: #ffffff;
@@ -127,7 +129,7 @@
         border: none;
         transition: all 0.25s ease-in-out;
         background-image: linear-gradient(to right, #fbbd61, #ec7532);
-        box-shadow: 0 0 20px 0 #fbbd61; }
+        box-shadow: 0 0 5px 0 #fbbd61; }
         .slideShow__item-buttons-btn:active {
           outline: none;
           border: none; }

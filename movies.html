@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/movies-page.css">
+  <link rel="stylesheet" href="css/footer.css">
   <script src="https://kit.fontawesome.com/4e3c8206ba.js" crossorigin="anonymous"></script>
 
   <title>Movie List</title>
@@ -61,8 +62,8 @@
 
     </div>
   </header>
-  <main>
 
+  <main>
     <!-- hero  -->
     <section class="movies-hero">
       <div class="container">
@@ -85,8 +86,19 @@
               <i class="fas fa-search"></i>
             </div>
 
-
             <div class="row items">
+              <div class="col-md-12">
+                <div class="movies__order">
+                  <select class="movies__order-item" name="selectOrder" id="">
+                    <option value="default">Default Option</option>
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                    <option value="topbook">Top Booked</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row ">
               <div class="col-md-3">
                 <div class="movies__filter">
                   <h3>Filter By</h3>
@@ -269,6 +281,64 @@
 
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="footer__item">
+            <h3 class="footer__item-title">
+              Get in touch
+            </h3>
+            <ul class="footer__item-list">
+              <li><a href="#">FAGS</a></li>
+              <li><a href="#">Give a feedback</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer__item">
+            <h3 class="footer__item-title">
+              About movie star
+            </h3>
+            <ul class="footer__item-list">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Find us</a></li>
+              <li><a href="#">Schedule</a></li>
+              <li><a href="#">News</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer__item">
+            <h3 class="footer__item-title">
+              Legal Stuff
+            </h3>
+            <ul class="footer__item-list">
+              <li><a href="#">FAGS</a></li>
+              <li><a href="#">Give a feedback</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer__item">
+            <h3 class="footer__item-title">
+              CONNECT WITH US
+            </h3>
+            <ul class="footer__item-list">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Google +</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
 
 </body>
 

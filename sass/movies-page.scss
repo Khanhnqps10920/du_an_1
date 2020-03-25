@@ -61,6 +61,19 @@
     margin-top: 4.5rem;
   }
 
+  &__order {
+    display: flex;
+    justify-content: flex-end;
+
+    &-item {
+      width: 30%;
+      padding: 1rem 2rem;
+      outline: none;
+
+      font-size: 1.6rem;
+    }
+  }
+
   //filter
   &__filter {
     h3 {

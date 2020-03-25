@@ -41,6 +41,14 @@
       transform: translateY(-50%); }
   .movies .items {
     margin-top: 4.5rem; }
+  .movies__order {
+    display: flex;
+    justify-content: flex-end; }
+    .movies__order-item {
+      width: 30%;
+      padding: 1rem 2rem;
+      outline: none;
+      font-size: 1.6rem; }
   .movies__filter h3 {
     font-size: 2rem;
     margin-bottom: 1rem;

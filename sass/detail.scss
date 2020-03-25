@@ -1,0 +1,135 @@
+@import './variables.scss';
+
+// detail-hero
+.detail-hero {
+    width: 100%;
+    background-image: url('../images/hero-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+    position: relative;
+
+    .scroll-down {
+        position: absolute;
+        background: $white-color;
+        padding: 1rem 3rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        top: 96%;
+        left: 50%;
+        border-radius: 90px 90px 3px 3px;
+        animation: move-left-right 1.5s ease-in alternate infinite;
+
+        i {
+            color: $black-color;
+            font-size: 2rem;
+        }
+    }
+
+    &__category {
+        color: $link-color;
+        font-size: 1.6rem;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        margin: 1rem 0;
+    }
+
+    &__name {
+        font-size: 4rem;
+        color: $white-color;
+        margin: 2rem 0;
+    }
+
+    &__des {
+        font-size: 1.8rem;
+        color: $white-color;
+    }
+
+    &__buttons {
+        display: flex;
+        margin: 2rem 0;
+        color: $white-color;
+        align-items: center;
+
+        .certifate {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            border: .1rem solid $white-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+
+        .play {
+            margin-left: 2rem;
+            font-size: 1.6rem;
+
+            color: $white-color;
+            padding: 1rem 4rem;
+            @include color-gradient-transition;
+            border-radius: 3rem;
+            letter-spacing: 0.3rem;
+            position: relative;
+
+            i {
+                margin-right: 1rem;
+            }
+
+            overflow: hidden;
+
+            &:hover {
+                &::before {
+                    width: 200%;
+                }
+            }
+
+            &::before {
+                z-index: 1;
+                background: $second-link-color;
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 100%;
+                left: -100px;
+                top: 0;
+                transform: skewX(30deg);
+                transition: 0.4s ease-in-out;
+            }
+
+            span {
+                position: relative;
+                z-index: 2;
+            }
+
+        }
+
+        .star {
+            margin-left: 2rem;
+        }
+    }
+}
+
+// detail-item 
+
+.detail-item {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+
+@keyframes move-left-right {
+    0% {
+        left: 49%;
+    }
+
+
+    100% {
+        left: 51%;
+    }
+}

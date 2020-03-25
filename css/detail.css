@@ -1,0 +1,92 @@
+.detail-hero {
+  width: 100%;
+  background-image: url("../images/hero-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+  position: relative; }
+  .detail-hero .scroll-down {
+    position: absolute;
+    background: #ffffff;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    top: 96%;
+    left: 50%;
+    border-radius: 90px 90px 3px 3px;
+    animation: move-left-right 1.5s ease-in alternate infinite; }
+    .detail-hero .scroll-down i {
+      color: #000000;
+      font-size: 2rem; }
+  .detail-hero__category {
+    color: #fbbd61;
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    margin: 1rem 0; }
+  .detail-hero__name {
+    font-size: 4rem;
+    color: #ffffff;
+    margin: 2rem 0; }
+  .detail-hero__des {
+    font-size: 1.8rem;
+    color: #ffffff; }
+  .detail-hero__buttons {
+    display: flex;
+    margin: 2rem 0;
+    color: #ffffff;
+    align-items: center; }
+    .detail-hero__buttons .certifate {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      border: 0.1rem solid #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem; }
+    .detail-hero__buttons .play {
+      margin-left: 2rem;
+      font-size: 1.6rem;
+      color: #ffffff;
+      padding: 1rem 4rem;
+      transition: all 0.25s ease-in-out;
+      background-image: linear-gradient(to right, #fbbd61, #ec7532);
+      border-radius: 3rem;
+      letter-spacing: 0.3rem;
+      position: relative;
+      overflow: hidden; }
+      .detail-hero__buttons .play i {
+        margin-right: 1rem; }
+      .detail-hero__buttons .play:hover::before {
+        width: 200%; }
+      .detail-hero__buttons .play::before {
+        z-index: 1;
+        background: #ec7532;
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 100%;
+        left: -100px;
+        top: 0;
+        transform: skewX(30deg);
+        transition: 0.4s ease-in-out; }
+      .detail-hero__buttons .play span {
+        position: relative;
+        z-index: 2; }
+    .detail-hero__buttons .star {
+      margin-left: 2rem; }
+
+.detail-item {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem; }
+
+@keyframes move-left-right {
+  0% {
+    left: 49%; }
+  100% {
+    left: 51%; } }
