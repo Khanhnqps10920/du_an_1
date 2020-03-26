@@ -67,7 +67,7 @@
       .detail-hero__buttons .play::before {
         z-index: 1;
         background: #ec7532;
-        content: '';
+        content: "";
         position: absolute;
         width: 0;
         height: 100%;
@@ -84,6 +84,159 @@
 .detail-item {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem; }
+  .detail-item__info h3 {
+    margin: 0 0 4rem 0;
+    color: #ec7532;
+    letter-spacing: 0.3rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid #d8d8d8;
+    position: relative; }
+    .detail-item__info h3::after {
+      content: "";
+      transition: all 0.25s ease-in-out;
+      background-image: linear-gradient(to right, #fbbd61, #ec7532);
+      position: absolute;
+      width: 20%;
+      height: 0.3rem;
+      left: 0;
+      bottom: -0.1rem; }
+  .detail-item__info-avatar {
+    width: 100%;
+    height: 100%; }
+    .detail-item__info-avatar img {
+      width: 100%;
+      vertical-align: middle;
+      object-fit: cover;
+      height: 90%;
+      border-radius: 1rem;
+      object-position: center; }
+    .detail-item__info-avatar .social-media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 2rem; }
+      .detail-item__info-avatar .social-media__item {
+        margin: 0 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border: .1rem solid #d8d8d8;
+        transition: 0.4s ease-in-out; }
+        .detail-item__info-avatar .social-media__item a {
+          color: #ec7532;
+          font-size: 1.2rem;
+          transition: 0.4s ease-in-out; }
+        .detail-item__info-avatar .social-media__item:hover {
+          border: 0.1rem solid #fbbd61; }
+          .detail-item__info-avatar .social-media__item:hover a {
+            opacity: 0.3; }
+  .detail-item__info-item {
+    font-size: 1.6rem; }
+    .detail-item__info-item p {
+      margin: 1.5rem 0 0 0;
+      line-height: 2.5rem;
+      font-size: 1.2rem;
+      letter-spacing: .1rem;
+      color: #717171; }
+    .detail-item__info-item h2 {
+      font-size: 2rem;
+      font-weight: 400;
+      color: #101010; }
+    .detail-item__info-item p.info {
+      font-weight: 500;
+      text-transform: uppercase; }
+  .detail-item__viewing .tab-info {
+    display: flex;
+    margin: 0 0 4rem 0;
+    color: #ec7532;
+    letter-spacing: 0.3rem;
+    justify-content: space-between; }
+    .detail-item__viewing .tab-info h3 {
+      font-weight: 400;
+      position: relative;
+      width: 100%;
+      text-align: left;
+      padding-bottom: 2rem;
+      border-bottom: 0.1rem solid #d8d8d8;
+      color: black; }
+      .detail-item__viewing .tab-info h3::after {
+        content: "";
+        transition: all 0.25s ease-in-out;
+        background-image: linear-gradient(to right, #fbbd61, #ec7532);
+        position: absolute;
+        width: 0;
+        height: 0.3rem;
+        left: 0;
+        bottom: -0.1rem; }
+      .detail-item__viewing .tab-info h3.active {
+        color: #ec7532; }
+        .detail-item__viewing .tab-info h3.active::after {
+          width: 30%; }
+  .detail-item__viewing .tab-item .day {
+    font-size: 1.6rem;
+    padding: .5rem 0;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    justify-content: center; }
+  .detail-item__viewing .tab-item .times {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .detail-item__viewing .tab-item .times .time {
+      margin: 0 1rem;
+      background: #d8d8d8;
+      color: #717171;
+      padding: 1rem 2rem;
+      border-radius: .5rem;
+      transition: 0.4s ease-in-out; }
+      .detail-item__viewing .tab-item .times .time:hover {
+        background: #ec7532;
+        color: #ffffff; }
+
+.detail-images {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  background: #000000;
+  margin-bottom: 20rem;
+  position: relative; }
+  .detail-images__main {
+    width: 100%;
+    position: relative;
+    z-index: 1; }
+    .detail-images__main img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center; }
+    .detail-images__main a {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(50%);
+      color: #ffffff;
+      width: 6rem;
+      height: 6rem;
+      border: 0.1rem solid #ec7532;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .detail-images__background {
+    background: url("../images/hero-1.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.3; }
 
 @keyframes move-left-right {
   0% {
